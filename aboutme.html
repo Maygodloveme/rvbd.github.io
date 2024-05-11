@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutme.css">
+    <title>About me!</title>
+</head>
+<body>
+    <header>
+        <img src="logorv.jpg" alt="Logo" class="logo">
+        <h1>Dunia Keyboard</h1>
+    </header>
+
+    <h2 class="center">Admin</h2>
+    <article class="center-article">
+        <img src="wajah.jpg" alt="wajah" style="width: 500px;">
+        <p align="justify">Selamat datang di biodata saya. Perkenalkan nama saya I Komang Revo Randiva Putra, saya sebagai penulis website ini merasa senang jika teman-teman menyukai website saya yang sederhana ini. Di website ini saya menuliskan hobi yang mungkin kalian jarang dengar dikalangan anak muda sekarang, yaitu hobi mengenai keyboard (mekanikal maupun membran). Jadi disini saya sedikit sharing mengenai jenis keyboard, apa itu switch dan memberi saran keyboard seperti apa yang mungkin anda suka. Saya sudah menggeluti hobi ini sejak 2020 sampai sekarang ini, dan sudah memiliki beberapa keyboard dengan berbagai layout.</p>
+        <p>Kalian bisa mengunjungi sosial media saya dibawah ini: </p>
+    </article>
+
+    <footer>
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100053141971245"><img src="https://www.pngarts.com/files/10/Facebook-Logo-Black-And-White-PNG-Picture.png" style="width: 100px;" alt="Facebook"></a>
+                <a href="https://www.instagram.com/rvonart/"><img src="https://i1.wp.com/www.vectorico.com/wp-content/uploads/2018/02/Instagram-Logo.png?fit=600%2C600" style="width: 100px;"alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCKHojzB32Ajzht8ugbaFzhw"><img src="https://a0a73a99cbfedf7e3b28-a6fed8c1b4fb343f790cc1a783af6690.ssl.cf3.rackcdn.com/icons/social/youtube-black.png" style="width: 100px;"alt="YouTube"></a>
+            </div>
+            <div class="copy-right">
+            </div>
+        </div>
+    </footer>
+
+    <div class="container">
+        <nav>
+            <a href="aboutme.html">About me</a>
+            <a onclick="darkMode()">MODE</a>
+        </nav>
+    </div>
+
+    <script>
+        let body = document.body;
+        const darkModeLimit = 5;
+        let darkModeCounter = 0;
+
+        function darkMode() {
+            darkModeCounter += 1;
+
+            if (darkModeCounter > darkModeLimit) {
+                alert('dark mode limit');
+                return;
+            }
+            console.log('darkMode: ' + darkModeCounter);
+            body.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
